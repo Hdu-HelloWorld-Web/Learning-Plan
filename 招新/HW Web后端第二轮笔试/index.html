@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		li {
+			list-style: none;
+			cursor: pointer;
+		}
+		.container {
+			width: 30%;
+		}
+		.nav {
+			padding: 0;
+			margin: 0;
+		}
+		.nav-ceil {
+			box-sizing: border-box;
+			padding: 0;
+			margin: 0;
+			width: 33.33333%;
+			float: left;
+			text-align: center;
+			border-right: 1px solid #e7e7e7;
+			background: #3F3939;
+			color: white;
+			position: relative;
+		}
+		.nav-ceil:last-child {
+			border: none;
+		}
+		.nav-ceil div {
+			padding: 8px 0;
+		}
+		.nav-ceil ul{
+			position: absolute;
+			color: black;
+			width: 100%;
+			box-shadow: 4px 4px 8px #e7e7e7;
+		}
+		.list-wrap {
+			display: none;
+		}
+		.list-wrap li{
+			width: 100%;
+			padding: 8px 0;
+			text-align: center;
+			border-top: 1px solid #e7e7e7;
+		}
+
+		.list-wrap li:first-child {
+			border: none;
+		}
+		.nav-ceil:hover {
+			background: #E8E805;
+			color: black;
+		}
+		.nav-ceil:hover .list-wrap {
+			display: block;
+		}
+		.list-wrap li:hover {
+			background: #E8E805;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<ul class="nav">
+			<li class="nav-ceil">
+				<div>前端</div>
+				<ul class="list-wrap">
+					<li>HTML5</li>
+					<li>CSS3</li>
+					<li>JAVASCRIPT</li>
+				</ul>
+			</li>
+			<li class="nav-ceil">
+				<div>后端</div>
+				<ul class="list-wrap">
+					<li>JAVA</li>
+					<li>PHP</li>
+					<li>Python</li>
+				</ul>
+			</li>
+			<li class="nav-ceil">
+				<div>移动端</div>
+				<ul class="list-wrap">
+					<li>Android</li>
+					<li>IOS</li>
+					<li>React-Native</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
