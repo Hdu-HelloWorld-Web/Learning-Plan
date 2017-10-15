@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>insert, remove, find</title>
+	<style>
+		.list {
+			border: 2px solid gray;
+			margin-top: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="list">
+		<div>insert</div>
+		<form action="/insert" method="post">
+			<div>
+				<label for="">name</label>
+				<input name="name" type="text">
+			</div>
+			<div>
+				<label for="">score</label>
+				<input name="score" type="text">
+			</div>
+			<div>
+				<input value="insert" type="submit">
+			</div>
+		</form>
+	</div>
+	<div class="list">
+		<div>find</div>
+		<form action="/find" method="post">
+			<div>
+				<label for="">name</label>
+				<input name="name" type="text">
+			</div>
+			<div>
+				<input value="find" type="submit">
+			</div>
+		</form>
+	</div>
+	<div class="list">
+		<div>remove</div>
+		<form action="/remove" method="post">
+			<div>
+				<label for="">name</label>
+				<input name="name" type="text">
+			</div>
+			<div>
+				<label for="">score</label>
+				<input name="score" type="text">
+			</div>
+			<div>
+				<input value="remove" type="submit">
+			</div>
+		</form>
+	</div>
+</body>
+</html>
